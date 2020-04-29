@@ -1,0 +1,20 @@
+
+
+<div class="main">
+   <% @microposts.each do |cnann| %>
+    <div class="posts">
+      <div class="post">
+        <%= cnann.id %>
+      </div>
+      <div class="post">
+        <%= cnann.number %>
+      </div>
+      <div class="post">
+        <%= cnann.date %>
+      </div>
+      <div class="post">
+        <%= cnann.content %>
+      </div>
+    </div>
+   <% end %>
+</div>
