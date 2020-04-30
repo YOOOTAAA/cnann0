@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 20200428074806) do
 
   create_table "microposts", force: :cascade do |t|
-    t.integer "number"
+    t.string "number"
     t.string "date"
     t.text "content"
     t.integer "user_id"

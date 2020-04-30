@@ -1,4 +1,6 @@
-
+ <div class="posts">
+    <%= link_to '新規投稿',"/microposts/new" %>
+</div>
 
 <div class="main">
    <% @microposts.each do |cnann| %>
@@ -13,7 +15,7 @@
         <%= cnann.date %>
       </div>
       <div class="post">
-        <%= cnann.content %>
+        <%= link_to cnann.content,"/microposts/#{cnann.id}" %>
       </div>
     </div>
    <% end %>
